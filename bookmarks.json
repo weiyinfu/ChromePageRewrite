@@ -1,7 +1,7 @@
 {
   "name": "书签页",
   "description": "书签页重写",
-  "chrome_override": "bookmark",
+  "chrome_override": "bookmarks",
   "defaultUrl": "https://baidu.com",
   "placeholder": "请输入书签页的URL"
 }

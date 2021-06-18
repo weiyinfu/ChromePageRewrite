@@ -14,7 +14,7 @@ def save(s, content):
     json.dump(content, open(s, 'w'), ensure_ascii=False, indent=2)
 
 
-for i in ['history', 'bookmark']:
+for i in ['history', 'bookmarks']:
     if exists(i):
         shutil.rmtree(i)
     shutil.copytree("newtab", i)
