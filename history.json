@@ -1,0 +1,7 @@
+{
+  "name": "历史页",
+  "description": "历史页",
+  "chrome_override": "history",
+  "defaultUrl": "https://baidu.com",
+  "placeholder": "请输入历史页的URL"
+}

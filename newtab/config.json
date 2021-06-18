@@ -1,0 +1,7 @@
+{
+  "name": "新标签页",
+  "description": "描述",
+  "chrome_override": "newtab",
+  "defaultUrl": "https://baidu.com",
+  "placeholder": "请输入新标签页的地址"
+}
