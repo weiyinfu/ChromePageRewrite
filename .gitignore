@@ -3,3 +3,12 @@
 history/
 bookmark/
 bookmarks/
+.pytest_cache
+yarn.lock
+.pynb_checkpoints
+.vscode/
+.DS_Store
+node_modules/
+*.lock
+__pycache__/
+package-lock.json

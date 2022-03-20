@@ -3,9 +3,21 @@ function getUrl() {
 }
 
 getConfig().then(resp => {
-    let url = resp.defaultUrl;
-    if (getUrl()) {
-        url = getUrl();
+    function useIframe() {
+        let url = resp.defaultUrl;
+        if (getUrl()) {
+            url = getUrl();
+        }
+        document.title=resp.name;
+        document.body.innerHTML = `<iframe src="${url}"></iframe>`;
     }
-    document.body.innerHTML = `<iframe src="${url}"></iframe>`;
+
+    function useLocation() {
+        let url = resp.defaultUrl;
+        if (getUrl()) {
+            url = getUrl();
+        }
+        location.href = url;
+    }
+    useLocation();
 })

@@ -6,8 +6,13 @@ Chrome允许重写：新标签页、书签页、历史页三个页面。
 
 
 # 实现原理
+## 方法一
 使用iframe方式嵌入外部URL。  
 使用python把新标签页复制成bookmark、history。  
+缺点：对于超链接，如果在当前标签页打开，无法改变地址栏。
+
+## 方法二
+重定向，打开标签页的时候，直接跳转到特定页面。
 
 # 参考资料
 chrome页面重写文档链接：https://open.chrome.360.cn/extension_dev/override.html
